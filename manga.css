@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* Header Section */
+.home-page-header {
+  color: white;
+  background-color: #748793;
+  text-align: center;
+  padding: 20px 0; /* smaller padding for mobile */
+}
+
+.home-page-header h1 {
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 25px; /* mobile font size */
+  font-weight: 600;
+  border: solid white 4px;
+}
+
+.home-page-header p {
+  padding-top: 10px;
+  font-size: 17px;
+}
+
+/* Main Content Layout */
+.manga-intro {
+  display: flex;
+  flex-direction: column; /* mobile stacked */
+  gap: 1.5rem;
+  align-items: center;
+  max-width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Manga Image */
+.manga-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.manga-image img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  background-color: #748793;
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+/* Right Side - Card */
+.manga-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* Manga Info Grid */
+.manga-info {
+  display: grid;
+  grid-template-columns: 1fr; /* stacked on mobile */
+  gap: 0.5rem;
+  font-size: 14px;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+/* Manga Description */
+.manga-description {
+  font-size: 14px;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-left: 4px solid #748793;
+  border-radius: 4px;
+}
+
+/* Main wrapper */
+.home-page-main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+
+#chapter-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: grid;
+  gap: 0.75rem;
+  scroll-snap-type: y mandatory;
+}
+
+#chapter-list li {
+  border: solid #2c3e50;
+  background-color: #ffffff;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s, transform 0.2s;
+  font-weight: 500;
+  scroll-snap-type: y mandatory;
+}
+
+#chapter-list li:hover {
+  box-shadow: 0 0 8px #2c3e50, 0 0 15px #2c3e50;
+  color: #2c3e50;
+  transform: scale(1.02);
+}
+
+#chapter-list li a {
+  text-decoration: none;
+  color: #2c3e50;
+  display: block;
+  width: 100%;
+}
+
+.chapter-body {
+  font-family: "Poppins", sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.6;
+  background: #f4f4f4;
+}
+
+.chapter-page-header {
+  display: block;
+  color: white;
+  background-color: #748793;
+  text-align: center;
+  padding: 20px 0; /* smaller padding mobile */
+}
+
+.chapter-page-header a {
+  color: white;
+  text-decoration: none;
+}
+
+.chapter-page-header a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.home-page-header a {
+  color: white;
+  text-decoration: none;
+}
+
+.home-page-header a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.chapter-page-header h1 {
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 25px; /* smaller font mobile */
+  font-weight: 600;
+  border: solid white 4px;
+}
+
+.chapter-page-header p {
+  padding-top: 10px;
+  font-size: 17px;
+}
+
+.chapter-body h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chapter-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  margin: 2rem 0 30px 0;
+  text-align: center;
+}
+
+.chapter-nav a {
+  margin: 0;
+  text-decoration: none;
+  background-color: #748793;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chapter-nav a:hover {
+  background-color: black;
+  box-shadow: 0 0 8px rgba(116, 136, 147, 0.7);
+  outline: none;
+}
+
+.images img {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #748793;
+  font-size: 0.9rem;
+  color: white;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+  padding: 1rem;
+}
+
+/* ------------------ */
+/* ✅ Responsive Style - for bigger screens */
+/* ------------------ */
+@media (min-width: 769px) {
+  .home-page-header {
+    padding: 30px 0;
+  }
+
+  .home-page-header h1 {
+    font-size: 40px;
+    padding: 8px 14px;
+  }
+
+  .manga-intro {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+
+  .manga-image {
+    flex-shrink: 0;
+    width: auto;
+    display: block;
+  }
+
+  .manga-image img {
+    max-width: 280px;
+    padding: 0.5rem;
+  }
+
+  .manga-card {
+    flex: 1;
+    width: auto;
+    display: block;
+  }
+
+  .manga-info {
+    grid-template-columns: 100px auto;
+    gap: 0.5rem 1rem;
+    font-size: 14px;
+    width: auto;
+  }
+
+  .manga-description {
+    font-size: 15px;
+    width: auto;
+    padding: 1rem;
+  }
+
+  .chapter-page-header {
+    padding: 30px 0;
+  }
+
+  .chapter-page-header h1 {
+    font-size: 40px;
+    padding: 8px 14px;
+  }
+
+  .chapter-nav {
+    gap: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .chapter-nav a {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
