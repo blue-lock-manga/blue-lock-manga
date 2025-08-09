@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://blue-lock-manga.github.io/blue-lock-manga/sitemap.xml
