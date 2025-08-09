@@ -1,0 +1,5 @@
+
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://blue-lock-manga.github.io/blue-lock-manga/mysite.xml
